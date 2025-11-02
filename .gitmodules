@@ -2,3 +2,7 @@
 	path = libs/i2c
 	url = https://github.com/sedar007/i2c-lib-atmega32u4.git
 	branch = main
+[submodule "exemples/ssd1306"]
+	path = exemples/ssd1306
+	url = https://github.com/sedar007/ssd1306-avr.git
+	branch = main

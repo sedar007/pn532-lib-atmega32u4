@@ -11,7 +11,7 @@
 int main(void) {
     ssd1306_init();
     ssd1306_clear();
-    ssd1306_print_utf8_center("Initialisation...", 1);
+    ssd1306_print_utf8_center("Initialisation. youpi ..", 1);
 
     PN532 pn532;
     uint8_t buff[255];
