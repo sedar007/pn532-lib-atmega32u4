@@ -1,17 +1,16 @@
-// c
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 #include <util/delay.h>
 
-#include "../include/ssd1306.h"
-#include "../include/ssd1306_text.h"
+#include "ssd1306/include/ssd1306.h"
+#include "ssd1306/include/ssd1306_text.h"
 #include "../include/pn532_i2c.h"
 
 int main(void) {
     ssd1306_init();
     ssd1306_clear();
-    ssd1306_print_utf8_center("Initialisation. youpi ..", 1);
+    ssd1306_print_utf8_center("Initialisation ...", 1);
 
     PN532 pn532;
     uint8_t buff[255];
