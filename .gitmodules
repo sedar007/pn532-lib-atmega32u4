@@ -1,0 +1,4 @@
+[submodule "libs/i2c"]
+	path = libs/i2c
+	url = https://github.com/sedar007/i2c-lib-atmega32u4.git
+	branch = main
