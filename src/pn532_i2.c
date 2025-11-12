@@ -6,13 +6,13 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include "pn532_i2c.h"
-#include "i2c.h"
+#include "../libs/libi2c-atmega328p/include/i2c.h"
 
 
 
-static void PN532_Log(const char* msg) {
+/*static void PN532_Log(const char* msg) {
 
-}
+}*/
 
 int PN532_I2C_ReadData(uint8_t* data, uint16_t count) {
     i2c_start_read(PN532_I2C_ADDRESS);
@@ -79,7 +79,7 @@ void PN532_I2C_Init(PN532* pn532) {
     pn532->write_data = PN532_I2C_WriteData;
     pn532->wait_ready = PN532_I2C_WaitReady;
     pn532->wakeup = PN532_I2C_Wakeup;
-    pn532->log = PN532_Log;
+   // pn532->log = PN532_Log;
 
     pn532->reset();
     pn532->wakeup();
